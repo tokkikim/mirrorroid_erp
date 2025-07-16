@@ -23,7 +23,14 @@ const mockInvoices: SalesInvoice[] = [
     customer_phone: '02-1234-5678',
     customer_email: 'contact@abc.com',
     items: [
-      { product_name: '노트북', quantity: 2, unit_price: 1000000, total_price: 2000000 }
+      { 
+        id: '1', 
+        product_code: 'LAP001', 
+        product_name: '노트북', 
+        quantity: 2, 
+        unit_price: 1000000, 
+        total_price: 2000000 
+      }
     ],
     subtotal: 2000000,
     tax_amount: 200000,
@@ -45,8 +52,22 @@ const mockInvoices: SalesInvoice[] = [
     customer_phone: '02-9876-5432',
     customer_email: 'info@xyz.com',
     items: [
-      { product_name: '마우스', quantity: 10, unit_price: 50000, total_price: 500000 },
-      { product_name: '키보드', quantity: 5, unit_price: 100000, total_price: 500000 }
+      { 
+        id: '2', 
+        product_code: 'MOU001', 
+        product_name: '마우스', 
+        quantity: 10, 
+        unit_price: 50000, 
+        total_price: 500000 
+      },
+      { 
+        id: '3', 
+        product_code: 'KEY001', 
+        product_name: '키보드', 
+        quantity: 5, 
+        unit_price: 100000, 
+        total_price: 500000 
+      }
     ],
     subtotal: 1500000,
     tax_amount: 150000,

@@ -22,7 +22,14 @@ export default function SalesInvoiceForm({ invoice, onSubmit, onCancel }: SalesI
       customer_address: '',
       customer_phone: '',
       customer_email: '',
-      items: [{ product_name: '', quantity: 1, unit_price: 0, total_price: 0 }],
+      items: [{ 
+        id: 'temp-1', 
+        product_code: '', 
+        product_name: '', 
+        quantity: 1, 
+        unit_price: 0, 
+        total_price: 0 
+      }],
       issue_date: new Date().toISOString().split('T')[0],
       due_date: '',
       notes: ''
@@ -166,7 +173,14 @@ export default function SalesInvoiceForm({ invoice, onSubmit, onCancel }: SalesI
               type="button"
               variant="outline"
               size="sm"
-              onClick={() => append({ product_name: '', quantity: 1, unit_price: 0, total_price: 0 })}
+              onClick={() => append({ 
+                id: `temp-${Date.now()}`, 
+                product_code: '', 
+                product_name: '', 
+                quantity: 1, 
+                unit_price: 0, 
+                total_price: 0 
+              })}
             >
               <Plus className="w-4 h-4 mr-2" />
               품목 추가
