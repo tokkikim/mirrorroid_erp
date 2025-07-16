@@ -23,8 +23,22 @@ const mockInvoices: PurchaseInvoice[] = [
     supplier_phone: '02-1111-2222',
     supplier_email: 'supplier@a.com',
     items: [
-      { product_name: '사무용품', quantity: 5, unit_price: 200000, total_price: 1000000 },
-      { product_name: '컴퓨터', quantity: 2, unit_price: 800000, total_price: 1600000 }
+      { 
+        id: '1', 
+        product_code: 'OFF001', 
+        product_name: '사무용품', 
+        quantity: 5, 
+        unit_price: 200000, 
+        total_price: 1000000 
+      },
+      { 
+        id: '2', 
+        product_code: 'COM001', 
+        product_name: '컴퓨터', 
+        quantity: 2, 
+        unit_price: 800000, 
+        total_price: 1600000 
+      }
     ],
     subtotal: 1800000,
     tax_amount: 180000,
@@ -48,7 +62,14 @@ const mockInvoices: PurchaseInvoice[] = [
     supplier_phone: '02-5555-6666',
     supplier_email: 'supplier@b.com',
     items: [
-      { product_name: '원자재', quantity: 10, unit_price: 120000, total_price: 1200000 }
+      { 
+        id: '3', 
+        product_code: 'MAT001', 
+        product_name: '원자재', 
+        quantity: 10, 
+        unit_price: 120000, 
+        total_price: 1200000 
+      }
     ],
     subtotal: 1200000,
     tax_amount: 120000,
